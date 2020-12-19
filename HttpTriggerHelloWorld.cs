@@ -10,9 +10,9 @@ using Newtonsoft.Json;
 
 namespace Haptio.Blog
 {
-    public static class HttpTriggeHelloWorld
+    public static class HttpTriggerHelloWorld
     {
-        [FunctionName("HttpTriggeHelloWorld")]
+        [FunctionName("HttpTriggerHelloWorld")]
         public static async Task<IActionResult> Run(
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
